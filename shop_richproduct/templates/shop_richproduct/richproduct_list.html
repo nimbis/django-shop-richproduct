@@ -1,0 +1,23 @@
+{% load cms_tags shop_tags %}
+{% block body %}
+<div class="row">
+{% for object in object_list %}
+<div class="col-xs-6 col-sm-6 col-md-4">
+    <div class="thumbnail">
+        {% if object.image %}
+        <img src="{{ MEDIA_URL }}{{ object.image }}" alt="{{ object.get_name }}" />
+        {% else %}
+        <img data-src="holder.js/300x200" alt="{{ object.get_name }}" />
+        {% endif %}
+        <div class="caption">
+            <h3>{{ object.get_name }}</h3>
+            <p>{{ object.description }}</p>
+            <p>
+                <a href="{{ object.get_absolute_url }}" class="btn btn-primary" role="button">Details</a>
+            </p>
+        </div>
+    </div>
+</div>
+{% endfor %}
+</div>
+{% endblock %}

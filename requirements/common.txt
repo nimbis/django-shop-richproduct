@@ -1,0 +1,4 @@
+django<1.6
+django-discover-runner
+django-shop
+image
