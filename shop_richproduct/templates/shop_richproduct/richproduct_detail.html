@@ -1,0 +1,20 @@
+{% load cms_tags shop_tags %}
+{% block head %}
+{{ object.title }}
+{% endblock %}
+{% block body %}
+<p>{{ object.get_name }} - ${{ object.unit_price }}</p>
+<p>{{ object.description }}</p>
+{% if object.image %}
+<img src="{{ MEDIA_URL }}{{ object.image }}" class="img-thumbnail" alt="{{ object.get_name }}" />
+{% else %}
+<img data-src="holder.js/300x200" class="img-thumbnail" alt="{{ object.get_name }}" />
+{% endif %}
+
+<form method="post" action="{% url 'cart' %}">
+    {% csrf_token %}
+    <input type="hidden" name="add_item_id" value="{{ object.pk }}" />
+    <input type="text" name="add_item_quantity" value="1" />
+    <input type="submit" value="Add to Cart" />
+</form>
+{% endblock %}
