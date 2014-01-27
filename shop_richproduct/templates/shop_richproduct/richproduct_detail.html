@@ -1,14 +1,12 @@
+{% extends "shop/base.html" %}
 {% load cms_tags shop_tags %}
-{% block head %}
-{{ object.title }}
-{% endblock %}
 {% block body %}
-<p>{{ object.get_name }} - ${{ object.unit_price }}</p>
-<p>{{ object.description }}</p>
+<h2>{{ object.get_name }} - ${{ object.unit_price }}</h2>
 {% if object.image %}
 <img src="{{ MEDIA_URL }}{{ object.image }}" class="img-thumbnail" alt="{{ object.get_name }}" />
-{% else %}
-<img data-src="holder.js/300x200" class="img-thumbnail" alt="{{ object.get_name }}" />
+{% endif %}
+{% if object.description %}
+<p>{{ object.description }}</p>
 {% endif %}
 
 <form method="post" action="{% url 'cart' %}">

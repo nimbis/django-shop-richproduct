@@ -1,0 +1,16 @@
+language: python
+python:
+  - "2.7"
+branches:
+  only:
+    - master
+    - develop
+install:
+  - pip install -r requirements.txt
+script:
+  - make pep8
+  - make test
+  - make coverage
+  - make doc
+notifications:
+  hipchat: 67a245a9dd1bee819c8c7270fd7d40@travis

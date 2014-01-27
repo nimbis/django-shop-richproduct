@@ -16,10 +16,6 @@ DATABASES = {
     },
 }
 
-# use django-discover-runner
-TEST_RUNNER = 'discover_runner.DiscoverRunner'
-TEST_DISCOVER_ROOT = os.path.abspath('.')
-
 # Hosts/domain names that are valid for this site; required if DEBUG is False
 # See https://docs.djangoproject.com/en/1.5/ref/settings/#allowed-hosts
 ALLOWED_HOSTS = []
