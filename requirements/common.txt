@@ -1,4 +1,4 @@
-django<1.6
+django
 django-discover-runner
 django-shop
 image
