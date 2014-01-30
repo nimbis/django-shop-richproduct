@@ -4,3 +4,5 @@ coverage
 setuptools-pep8
 sphinx
 sphinx-rtd-theme
+
+git+https://github.com/dcramer/piplint.git#egg=piplint
