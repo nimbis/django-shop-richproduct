@@ -7,7 +7,7 @@ reqs = parse_requirements("requirements/common.txt")
 # setup the project
 setup(
     name="django-shop-richproduct",
-    version="0.0.2",
+    version="0.0.3",
     author="Nimbis Services, Inc.",
     author_email="info@nimbisservices.com",
     description="Rich product functionality for django shop.",
