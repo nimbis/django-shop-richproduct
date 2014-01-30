@@ -13,4 +13,4 @@ script:
   - make coverage
   - make doc
 notifications:
-  hipchat: 67a245a9dd1bee819c8c7270fd7d40@travis
+  secure: "V7hifJ0c08djuMmGgguzgwUXDkiTtYnIjmtHywn/wqq59U3hhnb7MzgIMxailf5hbh7eQp1rWEkUaJ1l5UCvbMaRFXYAalB3Yzg6gwGVMj3PpbqLKoDBIFC1wGXpQJD2ftaXAiBQId5F+f1xBL7fDcs5qChSDEJ0bNZujXXkOyg="
