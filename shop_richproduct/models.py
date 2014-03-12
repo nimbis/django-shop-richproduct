@@ -1,5 +1,6 @@
 from django.db import models
 from shop.models import Product
+from cms.models.fields import PlaceholderField
 
 
 class RichProductMixin(models.Model):
@@ -8,6 +9,7 @@ class RichProductMixin(models.Model):
     '''
 
     description = models.CharField(max_length=255)
+    description_placeholder = PlaceholderField('description_placeholder')
     image = models.ImageField(upload_to="rich_product")
 
     class Meta(object):
