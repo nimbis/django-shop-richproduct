@@ -1,3 +1,2 @@
 include README.md
 recursive-include shop_richproduct/templates *.html
-recursive-include shop_richproduct/migrations *.py
