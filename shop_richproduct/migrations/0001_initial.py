@@ -7,6 +7,10 @@ from django.db import models
 
 class Migration(SchemaMigration):
 
+    depends_on = (
+        ('shop', '0012_auto__add_field_extraorderpricefield_data'),
+    )
+
     def forwards(self, orm):
         # Adding model 'RichProduct'
         db.create_table(u'shop_richproduct_richproduct', (
