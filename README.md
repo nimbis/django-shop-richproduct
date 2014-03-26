@@ -3,7 +3,7 @@ django-shop-richproduct
 
 Provides rich product functionality for the django shop application.
 
-.. image:: https://travis-ci.org/nimbis/django-shop-richproduct.svg?branch=develop
+.. image:: https://travis-ci.org/nimbis/django-shop-richproduct.svg?branch=master
    :target: https://travis-ci.org/nimbis/django-shop-richproduct
 
 .. image:: https://coveralls.io/repos/nimbis/django-shop-richproduct/badge.png?branch=master
