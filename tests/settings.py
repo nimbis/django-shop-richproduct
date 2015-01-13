@@ -106,10 +106,10 @@ MIDDLEWARE_CLASSES = (
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'cmsplugin_urlproduct.urls'
+ROOT_URLCONF = 'shop_richproduct.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
-WSGI_APPLICATION = 'cmsplugin_urlproduct.wsgi.application'
+WSGI_APPLICATION = 'shop_richproduct.wsgi.application'
 
 TEMPLATE_DIRS = (
 )
@@ -121,6 +121,7 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'treebeard',
     'mptt',
     'cms',
     'shop',
