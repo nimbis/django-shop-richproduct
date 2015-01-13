@@ -1,13 +1,14 @@
 from setuptools import setup, find_packages
 from pip.req import parse_requirements
+from uuid import uuid1
 
 # parse requirements
-reqs = parse_requirements("requirements/common.txt")
+reqs = parse_requirements("requirements/common.txt", session=uuid1())
 
 # setup the project
 setup(
     name="django-shop-richproduct",
-    version="0.2.3",
+    version="0.2.4",
     author="Nimbis Services, Inc.",
     author_email="info@nimbisservices.com",
     description="Rich product functionality for django shop.",
