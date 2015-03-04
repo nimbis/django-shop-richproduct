@@ -1,9 +1,6 @@
-from setuptools import setup, find_packages
-from pip.req import parse_requirements
-from uuid import uuid1
+#!/usr/bin/env python
 
-# parse requirements
-reqs = parse_requirements("requirements/common.txt", session=uuid1())
+from setuptools import setup, find_packages
 
 # setup the project
 setup(
@@ -14,8 +11,13 @@ setup(
     description="Rich product functionality for django shop.",
     license="BSD",
     packages=find_packages(exclude=["tests", ]),
-    install_requires=[str(x).split(' ')[0] for x in reqs],
+    install_requires=[
+        'Django',
+        'django-shop >= 0.2.0',
+        'image',
+        'django-cms',
+        'django-treebeard',
+    ],
     zip_safe=False,
     include_package_data=True,
-    test_suite="tests.main",
 )
