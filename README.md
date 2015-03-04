@@ -11,7 +11,7 @@ Provides rich product functionality for the django shop application.
 Requirements
 ------------
 
-* django >= 1.5
+* django
 * django-cms
 * django-shop
 
