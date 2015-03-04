@@ -1,5 +1,6 @@
 {% extends "shop/base.html" %}
 {% load cms_tags shop_tags %}
+
 {% block body %}
 {% for object in object_list %}
 <h3><a href="{{ object.get_absolute_url }}">{{ object.get_name }}</a></h3>

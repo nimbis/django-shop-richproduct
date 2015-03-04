@@ -1,4 +1,4 @@
-django<1.7
+django
 django-shop>=0.2.0
 image
 django-cms
