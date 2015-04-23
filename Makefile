@@ -21,7 +21,7 @@ reqs: check-venv
 
 # Show all occurence of same error
 # Exclude the static directory, since it's auto-generated
-PEP8_OPTS=--repeat --exclude=static,migrations,js,doc --show-source
+PEP8_OPTS=--repeat --exclude=static,migrations,south_migrations,js,doc --show-source
 
 pep8: check-venv
 	python setup.py pep8 $(PEP8_OPTS)
