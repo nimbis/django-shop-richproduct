@@ -28,6 +28,10 @@ Installation
 History
 -------
 
+v1.0.0:
+
+    * Django 1.7 is now supported and required.
+
 v0.2.5:
 
     * Removing pip requirement from setup.py.
