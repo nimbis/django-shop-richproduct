@@ -1,5 +1,6 @@
-django
+django>=1.7,<1.8
 django-shop>=0.2.0
 image
 django-cms
 django-treebeard
+django-mptt
