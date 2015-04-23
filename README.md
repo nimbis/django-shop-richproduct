@@ -11,7 +11,7 @@ Provides rich product functionality for the django shop application.
 Requirements
 ------------
 
-* django
+* django < 1.8
 * django-cms
 * django-shop
 
@@ -30,7 +30,7 @@ History
 
 v1.0.0:
 
-    * Django 1.7 is now supported and required.
+    * Django 1.7 is now supported.
 
 v0.2.5:
 
