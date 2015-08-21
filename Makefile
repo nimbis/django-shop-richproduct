@@ -32,7 +32,7 @@ pep8: check-venv
 
 FLAKE8_OPTS = --max-complexity 10 --exclude='doc,migrations,south_migrations'
 flake8: check-venv
-	flake8 $(FLAKE8_OPTS) . | tee flake8.log
+	flake8 $(FLAKE8_OPTS) .
 
 test: check-venv clean
 	python manage.py test
