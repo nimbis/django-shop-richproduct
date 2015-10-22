@@ -5,7 +5,7 @@ from setuptools import setup, find_packages
 # setup the project
 setup(
     name="django-shop-richproduct",
-    version="1.0.0",
+    version="1.1.0",
     author="Nimbis Services, Inc.",
     author_email="info@nimbisservices.com",
     description="Rich product functionality for django shop.",

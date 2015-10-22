@@ -28,6 +28,11 @@ Installation
 History
 -------
 
+v1.1.0:
+
+	* Added purchase_button_label field to the RichProduct model to allow
+	  products to customize this button text on an individual basis.
+
 v1.0.0:
 
     * Django 1.7 is now supported.
