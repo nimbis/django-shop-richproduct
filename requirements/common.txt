@@ -1,6 +1,9 @@
-django>=1.7,<1.8
-django-shop>=0.2.0
+django>=1.8
 image
-django-cms
+django-cms>=3.1.1
 django-treebeard
 django-mptt
+
+# contains migrations necessary for Django 1.8 that are not
+# available upstream
+-e git+https://github.com/nimbis/django-shop@master#egg=shop

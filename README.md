@@ -11,7 +11,7 @@ Provides rich product functionality for the django shop application.
 Requirements
 ------------
 
-* django
+* django < 1.8
 * django-cms
 * django-shop
 
@@ -28,9 +28,14 @@ Installation
 History
 -------
 
+v1.1.0:
+
+	* Added purchase_button_label field to the RichProduct model to allow
+	  products to customize this button text on an individual basis.
+
 v1.0.0:
 
-    * Django 1.7 is now supported and required.
+    * Django 1.7 is now supported.
 
 v0.2.5:
 
