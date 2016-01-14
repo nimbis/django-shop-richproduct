@@ -6,4 +6,4 @@ django-mptt
 
 # contains migrations necessary for Django 1.8 that are not
 # available upstream
--e git+https://github.com/nimbis/django-shop@master#egg=shop
+-e git+https://github.com/nimbis/django-shop@master#egg=django-shop
