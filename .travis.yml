@@ -2,13 +2,19 @@ sudo: false
 language: python
 python:
   - "2.7"
+env:
+  global:
+    - NIFTY_TRAVIS_CACHE_REPO=https://github.com/nimbis/travis-cache-public.git
 install:
   - pip install -r requirements.txt
+before_script:
+  - git clone https://github.com/nimbis/nifty.git ./.nifty
 script:
+  - source .nifty/nifty-script
+  - verify_coverage_improvement
   - make pep8
   - make flake8
   - make test
-  - make coverage
   - make doc
 notifications:
   secure: "V7hifJ0c08djuMmGgguzgwUXDkiTtYnIjmtHywn/wqq59U3hhnb7MzgIMxailf5hbh7eQp1rWEkUaJ1l5UCvbMaRFXYAalB3Yzg6gwGVMj3PpbqLKoDBIFC1wGXpQJD2ftaXAiBQId5F+f1xBL7fDcs5qChSDEJ0bNZujXXkOyg="
