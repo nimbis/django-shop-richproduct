@@ -16,6 +16,7 @@ setup(
         'image',
         'django-cms',
         'django-treebeard',
+        'django-shop',
     ],
     zip_safe=False,
     include_package_data=True,
