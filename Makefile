@@ -1,5 +1,5 @@
 
-.PHONY: db test pep8 clean doc check-venv check-venv
+.PHONY: db test pep8 clean doc check-venv
 
 # clean out potentially stale pyc files
 clean:
