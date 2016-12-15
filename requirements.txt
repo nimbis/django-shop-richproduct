@@ -1,1 +1,19 @@
--r requirements/testing.txt
+-e .
+
+django>=1.8,<1.9
+image
+django-cms>=3.1.1
+django-treebeard
+django-mptt
+
+# contains migrations necessary for Django 1.8 that are not
+# available upstream
+-e git+https://github.com/nimbis/django-shop@master#egg=django-shop
+
+coverage
+setuptools-pep8
+sphinx
+sphinx-rtd-theme
+flake8
+
+git+https://github.com/dcramer/piplint.git#egg=piplint
