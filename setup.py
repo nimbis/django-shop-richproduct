@@ -12,10 +12,11 @@ setup(
     license="BSD",
     packages=find_packages(exclude=["tests", ]),
     install_requires=[
-        'Django',
+        'Django<1.9',
         'image',
         'django-cms',
         'django-treebeard',
+        'django-shop',
     ],
     zip_safe=False,
     include_package_data=True,

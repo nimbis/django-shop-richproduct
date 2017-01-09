@@ -1,1 +1,11 @@
--r requirements/testing.txt
+-e .
+
+# contains migrations necessary for Django 1.8 that are not
+# available upstream
+-e git+https://github.com/nimbis/django-shop@master#egg=django-shop
+
+coverage
+setuptools-pep8
+sphinx
+sphinx-rtd-theme
+flake8
